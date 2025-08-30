@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>진수영 포폴</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="./assets/js/script.js" defer></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer>
+  </script>
+  <!--
+    - 아이콘 링크
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+  
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="진수영" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="진수영">진수영</h1>
+
+          <p class="title">Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:fly7370@gmail.com" class="contact-link">fly737000@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+821077597370" class="contact-link">+82 (010) 7759-7370</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1992-06-26">June 26, 1992</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>서울 강북구 수유동</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Video</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            개인의 역량을 끊임없이 높이며 협업에서는 스스로를 돌아보는 자세로 근무하는 <b>공생하는 개발자</b>가 되겠습니다.
+          </p>
+
+          <p>
+            <span>[자신을 돌아보며 협업하는 자세를 중요시하는 '진 수영'입니다]</span>
+            좌우명으로 삼고 있는 고사성어인 ‘수신제가 치국평천하’는 자신을 닦은 후에야 집안, 나라, 천하가 평안해진다는 것을 의미합니다. 저에게 이 고사성어는 특히 일을 진행하면서
+            남을 탓하기 전에 자신을 먼저 돌아보라는 의미로 다가왔습니다.
+            학생 시절부터 문제가 생기면 자신을 먼저 돌아보았고 ‘나 전달법’을 통해 상대방의 행동 결과에 대해 함께 감정 문제없이 개방된 대화를 했습니다.
+            홈페이지를 제작한다는 것은 여러 팀이 함께 결과물을 만들어내는 직업이기 때문에 자신을 먼저 돌아보며 최적의 합의점을 찾아 함께 발전되는 방향을 찾아야 한다고 생각합니다.
+            개인의 역량을 끊임없이 높이며 협업에서는 자신을 돌아보는 자세로 근무하는 최고 최선의 개발자가 되겠습니다.
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  고품질의 디자인 작업
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  사용자 편의성 웹사이트 개발
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-video.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Editor</h4>
+
+                <p class="service-item-text">
+                  전문적인 수준의 비디오 촬영 및 편집
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  고품질의 사진 촬영 및 보정
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="김ㅇ연" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>김ㅇ연</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    디자인 경험이 있는 개발자로서 UI/UX 디자이너와의 협업이 매우 원활합니다.
+                    디자이너의 의도를 정확히 이해하고 기술적으로 실현할 수 있으며 실제 사용자 흐름에 맞게 구현을 제안하기도 합니다.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="김ㅇ석" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>김ㅇ석</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    디자인 시안을 정확하게 반영하면서도 화면 전환 효과나 사용자 인터랙션을 자연스럽게 연결하는 데 집중합니다.
+                    디자인적 디테일을 놓치지 않는 것이 강점입니다
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="이ㅇ승" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>이ㅇ승</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    별내달래 참여 프로젝트에 모두와 원활하게 소통하며 피드백을 잘 주고받으며 유연하게 조율합니다.
+                    항상 명확하게 의사소통하고 실질적인 결과를 이끌어내는 점이 인상 깊습니다.         
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="서ㅇ라" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>서ㅇ라</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    함께 프로젝트를 작업하며 느낀 것은 트렌드를 빠르게 파악하고 이를 실제 프로젝트에 반영하는 능력이 탁월하다고 느꼈습니다.
+                    디자인 의도를 명확히 전달하면서도 최신 트렌드를 프로젝트 방향에 따라 적절히 적용합니다.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="김ㅇ연" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>김ㅇ연</h4>
+
+              <time datetime="2025-06-14">14 June, 2025</time>
+
+              <div data-modal-text>
+                <p>
+                  디자인 경험이 있는 개발자로서 UI/UX 디자이너와의 협업이 매우 원활합니다.
+                  디자이너의 의도를 정확히 이해하고 기술적으로 실현할 수 있으며 실제 사용자 흐름에 맞게 구현을 제안하기도 합니다
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - certificate
+        -->
+
+        <section class="certificate">
+
+          <h3 class="h3 certificate-title">certificate</h3>
+
+          <ul class="certificate-list has-scrollbar">
+
+            <li class="certificate-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="certificate-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="certificate-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="certificate-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="certificate-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="certificate-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">교육</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">추가교육</h4>
+
+              <span>2021.03 — 2021.08</span>
+
+              <p class="timeline-text">
+                하이미디어학원 UI/UX 디자인 및 코딩교육
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">대학교</h4>
+
+              <span>2011.03 — 2018.09</span>
+
+              <p class="timeline-text">
+                한국교통대학교(4년제) <b>행정정보</b>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">고등학교</h4>
+
+              <span>2008.03 — 2011.02</span>
+
+              <p class="timeline-text">
+                하성고등학교 <b>문과계열</b>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">경력</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">자사 홈페이지 관리자</h4>
+
+              <span>2024 — Present</span>
+
+              <p class="timeline-text">
+                <span>유포코리아 사원/팀원</span>
+                유포코리아 홈페이지 관리 및 Cafe24 아떼스타 관리
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">웹디자이너</h4>
+
+              <span>2021 — 2023</span>
+
+              <p class="timeline-text">
+                <span>Wavve 영화 콘텐츠 디자인팀</span>
+                애플 아트워크 및 콘텐츠 작업
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">캠페인 마케팅 및 디자인 팀장</h4>
+
+              <span>2019 — 2021</span>
+
+              <p class="timeline-text">
+                <span>풍양보건소 연계 청년 금연 캠페인</span>
+                별내달래 청년단체 포스터, 배너, 홈페이지 디자인 등
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Motion graphic design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CSS</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">javascript</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://suyungjin.github.io/potfolio-guardians3/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Marvel 반응형</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="./assets/images/가디언즈오브갤럭시3_기획.jpg">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Marvel 반응형</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://suyungjin.github.io/portfolio-pnu/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.jpg" alt="퍼피앤유" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">퍼피앤유</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="./assets/images/퍼피엔유기획.jpg">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">퍼피앤유</h3>
+
+                <p class="project-category">web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://suyungjin.github.io/potfolio-admin/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">관리자 페이지</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Applications">
+              <a href="https://suyungjin.github.io/potfolio-test/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.jpg" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">햄뿡이의 에겐력 테토력 테스트</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://suyungjin.github.io/potfolio-farm/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.jpg" alt="inform" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">고구마팜 리뉴얼</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Video
+      -->
+
+      <article class="video" data-page="video">
+
+        <header>
+          <h2 class="h2 article-title">Video</h2>
+        </header>
+
+        <section class="video-posts">
+
+          <ul class="video-posts-list">
+
+            <li class="video-post-item">
+              <a href="https://vimeo.com/582012309">
+
+                <figure class="video-banner-box">
+                  <img src="./assets/images/video-2.jpg" alt="오늘은 모모찌 육회 먹방" loading="lazy">
+                </figure>
+
+                <div class="video-content">
+
+                  <div class="video-meta">
+                    <p class="video-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2021-02-13">2021-02-13</time>
+                  </div>
+
+                  <h3 class="h3 video-item-title">오늘은 모모찌 육회 먹방</h3>
+
+                  <p class="video-text">
+                    유튜버 먹방 홍보 영상 제작
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="video-post-item">
+              <a href="https://vimeo.com/582012150">
+
+                <figure class="video-banner-box">
+                  <img src="./assets/images/video-1.jpg" alt="별내달래 공포체험 이벤트" loading="lazy">
+                </figure>
+
+                <div class="video-content">
+
+                  <div class="video-meta">
+                    <p class="video-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2021-08-02">2021-08-02</time>
+                  </div>
+
+                  <h3 class="h3 video-item-title">별내달래 공포체험 이벤트</h3>
+
+                  <p class="video-text">
+                    별내달래 행사시 홍보 영상 제작
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="video-post-item">
+              <a href="https://vimeo.com/650719081">
+
+                <figure class="video-banner-box">
+                  <img src="./assets/images/video-3.jpg" alt="별내달래 행사 로고" loading="lazy">
+                </figure>
+
+                <div class="video-content">
+
+                  <div class="video-meta">
+                    <p class="video-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2021-11-28">2021-11-28</time>
+                  </div>
+
+                  <h3 class="h3 video-item-title">별내달래 행사 로고</h3>
+
+                  <p class="video-text">
+                    별내달래 행사시 로고 라인 에니메이션 제작
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="video-post-item">
+              <a href="https://vimeo.com/1103364746">
+
+                <figure class="video-banner-box">
+                  <img src="./assets/images/video-4.jpg" alt="식전 영상 인트로" loading="lazy">
+                </figure>
+
+                <div class="video-content">
+
+                  <div class="video-meta">
+                    <p class="video-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-07-22">2025-07-22</time>
+                  </div>
+
+                  <h3 class="h3 video-item-title">식전 영상 인트로</h3>
+
+                  <p class="video-text">
+                    넷플릭스 컨셉 식전 영상 포트폴리오
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12638.921059732564!2d127.0268228870398!3d37.632032184115715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbc0b910628d7%3A0xafe9ba1d1980250d!2z7Jik64-Z6rO17JuQ7ZiE64yA7ZmI7YOA7Jq07JWE7YyM7Yq4!5e0!3m2!1sen!2skr!4v1750731868545!5m2!1sen!2skr"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form id="contact-form" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
