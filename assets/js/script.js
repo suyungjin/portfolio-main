@@ -176,48 +176,64 @@ for (let i = 0; i < navigationLinks.length; i++) {
 //보안
 
 document.addEventListener('keydown', function (e) {
-    if (
-      e.key === 'F12' ||
-      (e.ctrlKey && e.shiftKey && e.key === 'I') ||
-      (e.ctrlKey && e.shiftKey && e.key === 'J') ||
-      (e.ctrlKey && e.key === 'U') ||
-      (e.ctrlKey && e.shiftKey && e.key === 'C')
-    ) {
-      e.preventDefault();
-      alert('개발자 도구 사용이 제한되었습니다.');
-    }
-  });
-
-  document.addEventListener('contextmenu', function (e) {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+    (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+    (e.ctrlKey && e.key === 'U') ||
+    (e.ctrlKey && e.shiftKey && e.key === 'C')
+  ) {
     e.preventDefault();
-    alert('마우스 오른쪽 클릭이 제한되었습니다.');
-  });
+    alert('개발자 도구 사용이 제한되었습니다.');
+  }
+});
 
- const threshold = 160;
-  let devtoolsOpen = false;
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+  alert('마우스 오른쪽 클릭이 제한되었습니다.');
+});
 
-  function detectDevTools() {
+const threshold = 160;
+let devtoolsOpen = false;
+
+// 모바일 기기인지 판별하는 함수 추가
+function isMobile() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+}
+
+function detectDevTools() {
+  let devtoolsDetected = false;
+
+  // 모바일이 아닐 때만 화면 크기 차이 감지
+  if (!isMobile()) {
     const widthDiff = window.outerWidth - window.innerWidth > threshold;
     const heightDiff = window.outerHeight - window.innerHeight > threshold;
-
-    const start = performance.now();
-    debugger;
-    const duration = performance.now() - start;
-
-    if (widthDiff || heightDiff || duration > 100) {
-      if (!devtoolsOpen) {
-        devtoolsOpen = true;
-
-        // 차단을 위해 자바스크립트 전부 비활성화 (예시로 함수 실행 안 함)
-        console.clear();
-        document.body.innerHTML = '<h1 style="color:red; text-align:center;">비정상 접근이 감지되었습니다.</h1>';
-        throw new Error('DevTools Detected');
-      }
-    } else {
-      devtoolsOpen = false;
+    if (widthDiff || heightDiff) {
+      devtoolsDetected = true;
     }
   }
 
-  setInterval(detectDevTools, 1000);
+  // 디버거 중단점 시간 감지 로직은 그대로 유지
+  const start = performance.now();
+  debugger;
+  const duration = performance.now() - start;
+  if (duration > 100) {
+    devtoolsDetected = true;
+  }
+
+  if (devtoolsDetected) {
+    if (!devtoolsOpen) {
+      devtoolsOpen = true;
+      console.clear();
+      document.body.innerHTML = '<h1 style="color:red; text-align:center;">비정상 접근이 감지되었습니다.</h1>';
+      throw new Error('DevTools Detected');
+    }
+  } else {
+    devtoolsOpen = false;
+  }
+}
+
+setInterval(detectDevTools, 1000);
 
   
